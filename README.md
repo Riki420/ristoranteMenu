@@ -1,66 +1,56 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Restaurant Menu Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Project Overview / Panoramica del Progetto
 
-## About Laravel
+This project is a web application designed to help manage the menu of a restaurant. The system allows restaurant administrators to add, edit, and remove dishes, manage categories, and control the visibility of dishes in the menu. It is built using **Laravel**, a popular PHP framework, and **MySQL** for database management.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Il progetto è un'applicazione web progettata per gestire il menu di un ristorante. Il sistema permette agli amministratori del ristorante di aggiungere, modificare e rimuovere piatti, gestire le categorie e controllare la visibilità dei piatti nel menu. È stato costruito utilizzando **Laravel**, un framework PHP popolare, e **MySQL** per la gestione del database.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Features / Funzionalità
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Admin Panel / Pannello di Amministrazione
 
-## Learning Laravel
+- **Add, Edit, and Delete Dishes**: Admins can manage dishes by adding new ones, editing existing dishes, or deleting them.
+- **Category Management**: Admins can create, edit, and delete categories to organize the dishes.
+- **Dish Visibility**: Admins can toggle the visibility of dishes to control which dishes are visible in the menu.
+- **Image Upload**: Admins can upload images for each dish.
+- **Menu Display**: The dishes are displayed on a public-facing menu, categorized and organized for customers.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Public Menu / Menu Pubblico
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **Categories Navigation**: Customers can browse the menu by selecting categories.
+- **Dish Display**: Each dish is displayed with its name, description, price, and image (if available).
+- **Responsive Design**: The application is designed to be fully responsive, making it accessible on both mobile and desktop devices.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Funzionalità del Pannello di Amministrazione
 
-## Laravel Sponsors
+- **Aggiungi, Modifica e Elimina Piatti**: Gli amministratori possono gestire i piatti aggiungendone di nuovi, modificando quelli esistenti o eliminandoli.
+- **Gestione delle Categorie**: Gli amministratori possono creare, modificare ed eliminare categorie per organizzare i piatti.
+- **Visibilità del Piatto**: Gli amministratori possono attivare o disattivare la visibilità dei piatti per controllare quali piatti sono visibili nel menu.
+- **Caricamento Immagini**: Gli amministratori possono caricare immagini per ogni piatto.
+- **Visualizzazione del Menu**: I piatti sono visualizzati su un menu pubblico, suddiviso in categorie e organizzato per i clienti.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Menu Pubblico
 
-### Premium Partners
+- **Navigazione per Categorie**: I clienti possono navigare nel menu selezionando le categorie.
+- **Visualizzazione dei Piatti**: Ogni piatto viene visualizzato con il suo nome, descrizione, prezzo e immagine (se disponibile).
+- **Design Responsivo**: L'applicazione è progettata per essere completamente responsiva, rendendola accessibile sia su dispositivi mobili che su desktop.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## Installation / Installazione
 
-## Contributing
+To set up this project locally, follow the steps below.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Per configurare questo progetto localmente, segui i passaggi qui sotto.
 
-## Code of Conduct
+### Prerequisites / Prerequisiti
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- PHP >= 8.0
+- Composer
+- MySQL
+- Laravel
 
-## Security Vulnerabilities
+### Steps / Passaggi
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/restaurant-menu-management.git
