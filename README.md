@@ -49,8 +49,3 @@ Per configurare questo progetto localmente, segui i passaggi qui sotto.
 - MySQL
 - Laravel
 
-### Steps / Passaggi
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/restaurant-menu-management.git
