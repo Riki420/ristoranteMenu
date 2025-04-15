@@ -14,6 +14,8 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -35,5 +37,39 @@
             </main>
             
         </div>
+
+
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5>Locanda Del Pellegrino</h5>
+                  <p>4.4 ★★★★☆ (484 recensioni)</p>
+                  <p>€€ Ristorante</p>
+                  <p>Servizio: Ha tavoli all'aperto · Dispone di camino · Serve piatti vegetariani</p>
+                </div>
+                <div class="col-md-6">
+                  <h5>Indirizzo</h5>
+                  <p>Via Bocca di Rio, 20, 40035 Baragazza BO</p>
+                  <p>Telefono: 0534 898304</p>
+                  <h5>Orari</h5>
+                  <ul class="list-unstyled">
+                    <li>Martedì: Chiuso</li>
+                    <li>Mercoledì: Chiuso</li>
+                    <li>Giovedì: 09–17</li>
+                    <li>Venerdì: 09–17</li>
+                    <li>Sabato: 09–17</li>
+                    <li>Domenica: 09–18</li>
+                    <li>Pasqua: L'orario può variare</li>
+                    <li>Lunedì: Chiuso</li>
+                    <li>Lunedì dell'Angelo: Chiuso</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+          
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
     </body>
 </html>

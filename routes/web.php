@@ -44,6 +44,9 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
 
     // Route per toggle della visibilità
     Route::patch('dishes/{dish}/toggle-visibility', [DishController::class, 'toggleVisibility'])->name('dishes.toggleVisibility');
+    Route::patch('dishes/{dish}/toggle-vegan', [DishController::class, 'toggleVegan'])->name('dishes.toggleVegan');
+    Route::patch('dishes/{dish}/toggle-gluten-free', [DishController::class, 'toggleGlutenFree'])->name('dishes.toggleGlutenFree');
+
 });
 
 

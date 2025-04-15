@@ -28,11 +28,26 @@
                         <label for="description" class="text-white fs-4 py-2">Descrizione</label>
                         <textarea name="description" class="form-control"></textarea>
                     </div>
-                    
+                    <!-- 
                     <div class="form-group mb-3">
                         <label for="is_visible" class="text-white fs-4 py-2">Disponibilità</label>
                         <input type="checkbox" name="is_visible" id="is_visible" class="form-check-input" value="1" checked>
                     </div>
+                     
+                    <div class="form-group mb-3">
+                        <label class="text-white fs-4 py-2 d-block">Caratteristiche</label>
+                    
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" name="is_vegan" id="is_vegan">
+                            <label class="form-check-label text-white" for="is_vegan">Piatto vegano</label>
+                        </div>
+                        
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" name="is_gluten_free" id="is_gluten_free">
+                            <label class="form-check-label text-white" for="is_gluten_free">Senza glutine</label>
+                        </div>
+                    </div>
+                    -->
     
                     <div class="form-group mb-3">
                         <label for="category_id" class="text-white fs-4 py-2">Categoria</label>

@@ -13,7 +13,9 @@ class Dish extends Model
         'description',   // Aggiungi 'description'
         'category_id',   // Aggiungi 'category_id'
         'image',         // Aggiungi 'image' se desideri che sia mass-assegnabile
-        'is_visible'
+        'is_visible',
+        'is_vegan',         
+        'is_gluten_free',
     ];
 
     public function categories()

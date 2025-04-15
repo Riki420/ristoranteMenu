@@ -35,14 +35,27 @@
                     <label for="image">Immagine</label>
                     <input type="file" name="image" id="image" class="form-control">
                 </div>
-
+                <!-- Visibility -->
                 <div class="form-group mb-3">
                     <label for="is_visible" class="text-white fs-4 py-2">Disponibilità</label>
                     <input type="checkbox" name="is_visible" id="is_visible" class="form-check-input" 
                            {{ $dish->is_visible ? 'checked' : '' }}>
                     <label for="is_visible" class="form-check-label text-white">Visibile nel menu</label>
                 </div>
+                <!-- Gluten and Vegan -->
+                <div class="form-group mb-3">
+                    <label class="text-white fs-4 py-2 d-block">Caratteristiche</label>
                 
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" name="is_vegan" id="is_vegan" class="form-check-input" {{ old('is_vegan', $dish->is_vegan ?? false) ? 'checked' : '' }}>
+                        <label for="is_vegan" class="form-check-label text-white">Vegano</label>
+                    </div>
+                
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" name="is_gluten_free" id="is_gluten_free" class="form-check-input" {{ old('is_gluten_free', $dish->is_gluten_free ?? false) ? 'checked' : '' }}>
+                        <label for="is_gluten_free" class="form-check-label text-white">Senza Glutine</label>
+                    </div>
+                </div>
                 
     
                 <div class="form-group mb-3">

@@ -42,6 +42,9 @@ class DishController extends Controller
         'category_ids' => 'required|array',
         'category_ids.*' => 'exists:categories,id',
         'description' => 'nullable|string',
+        'is_visible' => 'boolean',
+        'is_vegan' => 'boolean',
+        'is_gluten_free' => 'boolean',
         'image' => 'nullable|image|mimes:jpg,png,jpeg,gif|max:2048',
         'is_visible' => 'boolean', // Validazione del campo visibilità
     ]);
@@ -59,6 +62,9 @@ class DishController extends Controller
         'description' => $request->description,
         'image' => $imagePath ?? null,  // Salva il percorso dell'immagine
         'is_visible' => $request->has('is_visible'), // Imposta la visibilità
+        'is_visible' => $request->has('is_visible'),
+        'is_vegan' => $request->has('is_vegan'),
+        'is_gluten_free' => $request->has('is_gluten_free'),
     ]);
     
     // Associa il piatto alle categorie selezionate
@@ -82,6 +88,8 @@ class DishController extends Controller
             'category_ids' => 'required|array',
             'category_ids.*' => 'exists:categories,id',
             'description' => 'nullable|string',
+            'is_vegan' => 'boolean',
+            'is_gluten_free' => 'boolean',
             'image' => 'nullable|image|mimes:jpg,png,jpeg,gif|max:2048',
             'is_visible' => 'boolean', // Validazione del campo visibilità
         ]);
@@ -102,6 +110,9 @@ class DishController extends Controller
             'price' => $request->price,
             'description' => $request->description,
             'is_visible' => $request->has('is_visible'), // Gestisce la visibilità
+            'is_visible' => $request->has('is_visible'),
+            'is_vegan' => $request->has('is_vegan'), // Vegan Free
+            'is_gluten_free' => $request->has('is_gluten_free'), // Gluten Free
         ]);
     
         $dish->categories()->sync($request->category_ids);
@@ -126,4 +137,21 @@ class DishController extends Controller
 
     return redirect()->route('admin.dishes.index')->with('success', 'Visibilità aggiornata con successo!');
     }
+
+    public function toggleVegan(Dish $dish)
+    {
+        $dish->is_vegan = !$dish->is_vegan;
+        $dish->save();
+
+        return redirect()->back();
+    }
+
+public function toggleGlutenFree(Dish $dish)
+    {
+        $dish->is_gluten_free = !$dish->is_gluten_free;
+        $dish->save();
+
+        return redirect()->back();
+    }
+
 }

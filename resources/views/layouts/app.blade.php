@@ -12,11 +12,13 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased bg-dark">
         <div class="bg-dark">
             @include('layouts.navigation')
 
@@ -34,5 +36,23 @@
                 {{ $slot }}
             </main>
         </div>
+
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <div class="bg-dark text-white p-4 rounded shadow">
+                        <h2 class="mb-3">Nome del Ristorante</h2>
+                        <p class="mb-2">Via: Via Roma 123, Città</p>
+                        <p class="mb-2">Telefono: +39 012 345 6789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
     </body>
 </html>

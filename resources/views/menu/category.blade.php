@@ -1,5 +1,7 @@
 <x-app-layout>
+    <hr class="py-5 text-white">
     <div class="container vh-100">
+
         <div class="row">
             <div class="col d-flex justify-content-center">
                 <div class="py-4">
@@ -24,6 +26,14 @@
                     </div>
                     <div class="card-footer bg-light text-center  border-top border-1 border-secondary text-dark">
                         <span class="fw-bold">{{ number_format($dish->price, 2) }}€</span>
+                        <div>
+                            @if($dish->is_vegan)
+                                <i class="fas fa-seedling text-success" title="Vegano"></i>
+                            @endif
+                            @if($dish->is_gluten_free)
+                                <i class="fas fa-solid fa-wheat-awn-circle-exclamation text-warning" title="Senza Glutine"></i>
+                            @endif
+                        </div>
                     </div>
                 </div>
             </div>

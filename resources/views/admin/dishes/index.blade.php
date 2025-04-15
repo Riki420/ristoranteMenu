@@ -47,6 +47,8 @@
                             <th>Descrizione</th>
                             <th>Prezzo</th>
                             <th>Categorie</th>
+                            <th>Vegano</th>
+                            <th>Gluten Free</th>
                             <th>Immagine</th>
                             <th>Azione</th>
                         </tr>
@@ -75,6 +77,27 @@
                                         <span class="badge bg-secondary">{{ $category->name }}</span>
                                     @endforeach
                                 </td>
+                                <!-- VEGAN -->
+                                <td>
+                                    <form action="{{ route('admin.dishes.toggleVegan', $dish->id) }}" method="POST">
+                                        @csrf
+                                        @method('PATCH')
+                                        <button type="submit" class="btn btn-sm {{ $dish->is_vegan ? 'btn-success' : 'btn-outline-secondary' }}">
+                                            <i class="fa-solid fa-leaf"></i>
+                                        </button>
+                                    </form>
+                                </td>
+                                <!-- Gluten Free -->
+                                <td>
+                                    <form action="{{ route('admin.dishes.toggleGlutenFree', $dish->id) }}" method="POST" class="mt-1">
+                                        @csrf
+                                        @method('PATCH')
+                                        <button type="submit" class="btn btn-sm {{ $dish->is_gluten_free ? 'btn-warning' : 'btn-outline-secondary' }}">
+                                            <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>
+                                        </button>
+                                    </form>
+                                </td>
+                                <!-- IMG -->
                                 <td>
                                     @if ($dish->image)
                                         <img src="{{ asset('storage/' . $dish->image) }}" style="max-width: 100px;" class="img-fluid rounded shadow-sm">

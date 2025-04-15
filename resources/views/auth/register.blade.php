@@ -1,5 +1,5 @@
 <x-guest-layout>
-
+<!--
     <div class="container">
         <hr class="text-white py-4">
         <div class="row">
@@ -32,4 +32,5 @@
             </div>
         </div>
     </div>
+-->
 </x-guest-layout>
