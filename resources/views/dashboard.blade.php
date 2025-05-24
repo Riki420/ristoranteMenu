@@ -32,6 +32,23 @@
                 </div>
             </div>
         </div>
+    <div class="container py-2">
+            <div class="text-center">
+                <a href="{{ route('menu.index') }}" class="btn btn-vintage mb-3">
+                Apri il Menù
+                </a>
+            </div>
+            <hr>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 py-4">
+                <a href="{{ route('admin.categories.index') }}" class="btn-vintage px-4 py-2">
+                Gestione Categorie
+                </a>
+                <a href="{{ route('admin.dishes.index') }}" class="btn-vintage px-4 py-2">
+                    Gestione Piatti
+                </a>
+            </div>
         
+                
+        </div>    
     
 </x-app-layout>

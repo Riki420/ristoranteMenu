@@ -3,9 +3,15 @@
         <div class="row">
             <div class="col d-flex justify-content-center">
                 <div class="py-4">
-                    <p class="fs-1 text-white"><b>Gestione Categorie</b></h1>
+                    <p class="fs-1 text-dark"><b>Gestione Categorie</b></h1>
                     </div>
                 </div>
+                <div>
+                    <a href="{{ route('dashboard') }}" class="btn-vintage px-4 py-2">
+                    Indietro
+                    </a>
+                </div>
+                    
             <hr class="py-2 text-white">
         </div>
 

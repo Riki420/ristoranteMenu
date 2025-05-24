@@ -2,8 +2,13 @@
     <div class="container min-vh-100 py-4">
         <!-- Titolo -->
         <div class="text-center mb-4">
-            <p class="text-white fw-bold fs-1">Gestione dei Piatti</p>
+            <p class="text-dark fw-bold fs-1">Gestione dei Piatti</p>
             <hr class="border-light py-2">
+        </div>
+        <div>
+            <a href="{{ route('dashboard') }}" class="btn-vintage px-4 py-2">
+                   Indietro
+            </a>
         </div>
     
         <!-- Messaggio di successo -->
